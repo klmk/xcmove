@@ -91,7 +91,10 @@ const MovieDetailPage: React.FC = () => {
                 </div>
               </div>
 
-              <button style={styles.playButton}>
+              <button
+                style={styles.playButton}
+                onClick={() => navigate(`/play/${movie.id}`)}
+              >
                 <Play size={22} fill="white" />
                 <span>立即播放</span>
               </button>
